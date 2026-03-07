@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #ff6600;
+  --color-brand-dark: #1a1a1a;
+  --color-brand-light: #f8f9fa;
+  --color-brand-gray: #333333;
+  --font-sans: "Outfit", "sans-serif";
+  --font-heading: "Playfair Display", "serif";
+}
+
+@layer base {
+  html, body {
+    @apply bg-[#eceff1] text-brand-gray font-sans overflow-x-hidden m-0 p-0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-brand-dark;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/50 shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] rounded-2xl;
+  }
+  
+  .glass-panel-dark {
+    @apply bg-[#1a1a1a]/80 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+}
