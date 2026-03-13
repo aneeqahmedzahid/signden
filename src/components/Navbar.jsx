@@ -76,6 +76,10 @@ const Navbar = () => {
             Services
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
           </a>
+          <a href="#gallery" className="hover:text-brand-orange transition-colors relative group">
+            Gallery
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+          </a>
           <a href="#contact" className="px-6 py-2.5 bg-brand-orange text-white rounded-full uppercase tracking-wider text-sm hover:bg-transparent hover:text-brand-orange border-2 border-brand-orange transition-all duration-300 shadow-[0_10px_20px_rgba(255,102,0,0.2)] hover:shadow-none">
             Get a Quote
           </a>
@@ -102,6 +106,7 @@ const Navbar = () => {
           <a href="#home" onClick={() => setMobileMenuOpen(false)}>Home</a>
           <a href="#about" onClick={() => setMobileMenuOpen(false)}>About</a>
           <a href="#services" onClick={() => setMobileMenuOpen(false)}>Services</a>
+          <a href="#gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
           <a href="#contact" className="text-brand-orange" onClick={() => setMobileMenuOpen(false)}>Contact</a>
         </div>
       </motion.div>
